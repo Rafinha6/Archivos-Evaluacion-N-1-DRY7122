@@ -1,0 +1,55 @@
+{
+  "router": {
+    "hostname": "Router-1",
+    "interfaces": [
+      {
+        "name": "GigabitEthernet0/0",
+        "ip_address": "192.168.1.1",
+        "subnet_mask": "255.255.255.0",
+        "status": "up",
+        "protocol": "up"
+      },
+      {
+        "name": "GigabitEthernet0/1",
+        "ip_address": "203.0.113.1",
+        "subnet_mask": "255.255.255.252",
+        "status": "down",
+        "protocol": "down"
+      }
+    ],
+    "routing": {
+      "protocols": [
+        {
+          "name": "OSPF",
+          "status": "active"
+        },
+        {
+          "name": "BGP",
+          "status": "inactive"
+        }
+      ]
+    },
+    "security": {
+      "passwords": [
+        {
+          "username": "admin",
+          "password": "secreto"
+        },
+        {
+          "username": "guest",
+          "password": "contraseña"
+        }
+      ],
+      "access_lists": [
+        {
+          "name": "ACL-1",
+          "type": "standard"
+        },
+        {
+          "name": "ACL-2",
+          "type": "extended"
+        }
+      ]
+    }
+  }
+}
